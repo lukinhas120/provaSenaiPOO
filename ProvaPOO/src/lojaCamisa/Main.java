@@ -6,18 +6,21 @@ public class Main {
 		CamisaEstampada camisa = new CamisaEstampada();
 		
 		camisa.setCor("Amarelo");
-		camisa.setPreco(59.99);
+		camisa.setPreco(50);
 		camisa.setTamanho("200CM");
 		camisa.setEstampa("Estampa do BackYardigans ");
 		
 		camisa.exibirDetalhes();
+		System.out.println(camisa.calcularDesconto());
+		
 		
 		Camisa camisa2 = new CamisaSimples();
 		camisa2.setCor("Roxo");
-		camisa2.setPreco(20.39);
+		camisa2.setPreco(20);
 		camisa2.setTamanho("X + 3");
 		
 		camisa2.exibirDetalhes();
+		System.out.println(camisa2.calcularDesconto());
 	}
 
 }
